@@ -1,0 +1,10 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+// Config vars
+$primary: #00cca3;
+$primary-invert: #fff;
+
+// Modules
+@import "patterns/_all";
+@import "utilities/_all";
+@import "~bulma";

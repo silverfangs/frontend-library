@@ -1,0 +1,19 @@
+.fel-blog-post {
+    &__title {
+        font-size: 1.375rem;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 0.0625rem solid #eaecee;
+    }
+
+    .fel-blog-post__img {
+        display: block;
+        margin: 20px auto 40px auto;
+        text-align: center;
+
+        img {
+            max-width: 700px;
+        }
+    }
+}

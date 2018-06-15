@@ -1,15 +1,21 @@
+// Modules
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+// Components
 import Navbar from '../components/Navbar'
-import './all.sass'
+import Footer from '../components/Footer'
+
+// Stylesheet
+import './styles/all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Home | Postivmind.org" />
     <Navbar />
     <div>{children()}</div>
+    <Footer />
   </div>
 )
 
