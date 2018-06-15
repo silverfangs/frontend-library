@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Home | Postivmind.org',
+    title: 'Home | FrontEnd Library',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

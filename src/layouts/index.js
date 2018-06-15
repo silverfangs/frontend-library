@@ -12,7 +12,7 @@ import './styles/all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Postivmind.org" />
+    <Helmet title="Home | FrontEnd Library" />
     <Navbar />
     <div>{children()}</div>
     <Footer />
