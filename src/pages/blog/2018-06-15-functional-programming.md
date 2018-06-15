@@ -7,19 +7,24 @@ tags:
   - Functional programming
   - immutable
 ---
-## Functional Programming
-The meaning of functional programming:
+## What is it functional programming and quirks?
 - Pure functions
 - Function composition
 - Avoid shared state
 - Avoid mutating state
 - Avoid side effects
 
+**Contrast with object oriented programming**: where application state is usually shared and colocated with methods in objects.
+
+## Criteria
 A pure function must satisfy both of the following properties:
 - **Referential transparency**: The function always gives the same return value for the same arguments. This means that the function cannot depend on any mutable state. (you can replace a function call with its resulting value without changing the meaning of the program)
 - **Side-effect free**: The function cannot cause any side effects. Side effects may include I/O (e.g., writing to the console or a log file), modifying a mutable object, reassigning a variable, etc.
 
-### Function composition
+## Testing
+Functional code tends to be more concise, more predictable, and easier to test than imperative or object oriented code
+
+### Example: Function composition
 ```javascript
 // h(x) = x + 1
 // number -> number
