@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: Stay Positive
+title: Hello World!
 image: /img/jumbotron.jpg
 heading: About Us | 关于我们
 description: >-
