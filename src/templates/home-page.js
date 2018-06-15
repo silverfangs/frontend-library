@@ -7,12 +7,7 @@ export const HomePageTemplate = ({
   image,
   title,
   heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
+  description
 }) => (
   <section className="section section--gradient">
     <div className="container">
