@@ -8,7 +8,7 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
+  date,
   tags,
   title,
   helmet,
@@ -24,7 +24,10 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            
+            <p>
+              Last updated on {date}
+            </p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -60,7 +63,7 @@ const BlogPost = ({ data }) => {
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
+      date={post.frontmatter.date}
       helmet={(
         <Helmet>
           <title>{post.frontmatter.title} | FrontEnd Library Blog</title>
