@@ -66,7 +66,7 @@ const ProductPage = ({ data }) => {
       helmet={(
         <Helmet>
           <title>Home | FrontEnd Library</title>
-          <meta name="description" content="FrontEnd Library serve as a site that serve the tutorials and latest news about frontend prgroamming and technologies for not only front-end programmers, but anyone who wanted to learn front-end web development" />
+          <meta name="description" content="FrontEnd Library serve as a site that serve the tutorials and latest news about frontend programming and technologies for not only front-end programmers, but anyone who wanted to learn front-end web development" />
           <meta name="keywords" content="FrontEnd Library, Front-end web development, Web developments, Web programming" />
         </Helmet>
       )}
