@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Ramda, library for function first, and the data last'
+title: 'Ramda, library for function first, and data later'
 date: '2018-06-16T17:07:05+08:00'
 description: >-
   Ramda, is a Javascript library to help you to create functional style for your
