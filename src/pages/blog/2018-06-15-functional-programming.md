@@ -9,7 +9,7 @@ tags:
 ---
 ## What is it functional programming and quirks?
 - Pure functions
-- Function composition
+- Function composition (process of combining two or more functions in order to produce a new function or perform some computation)
 - Avoid shared state
 - Avoid mutating state
 - Avoid side effects
