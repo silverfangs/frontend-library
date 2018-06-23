@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Functional Programming
+title: Intro to functional programming in Javascript
 date: '2018-06-15T14:33:07+08:00'
 description: Last update on 06/15/2018
 tags:
