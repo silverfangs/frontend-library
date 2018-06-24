@@ -29,9 +29,14 @@ export default class IndexPage extends React.Component {
                       <span> &bull; </span>
                       <small>{post.frontmatter.date}</small>
                     </p>
-                    <Link className="fel-blog-post__img" to={post.fields.slug}>
-                      <img src={post.frontmatter.image} />
-                    </Link>
+                    {
+                      !!post.frontmatter.postImage ?
+                      (
+                          <Link className="fel-blog-post__img" to={post.fields.slug}>
+                            <img src={post.frontmatter.postImage} />
+                          </Link>
+                      ) : null
+                    }
                     <p>
                       {post.excerpt}
                       <br />
@@ -64,8 +69,7 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: {
         frontmatter: {
-          templateKey: { eq: "blog-post" },
-          publishState: { eq: "Publish" }
+          templateKey: { eq: "blog-post" }
         }
       }
     ) {

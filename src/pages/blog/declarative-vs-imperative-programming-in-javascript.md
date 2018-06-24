@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Declarative vs Imperative programming in Javascript
 date: '2018-06-23T16:50:23+08:00'
+postImage: ''
 description: >-
   Describing how to use declarative programming and imperative programming in
   Javascript
