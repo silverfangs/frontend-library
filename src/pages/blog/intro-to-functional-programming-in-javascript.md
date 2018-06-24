@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Intro to functional programming in Javascript
 date: '2018-06-15T14:33:07+08:00'
 publishState: Publish
-postImage: ''
+postImage: /img/cover-intro-to-functional-programming-in-javascript.png
 description: Last update on 06/15/2018
 tags:
   - Functional programming
