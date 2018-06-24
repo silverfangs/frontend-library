@@ -9,6 +9,10 @@ tags:
   - Functional programming
   - immutable
 ---
+<div style="position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0; margin-bottom: 50px;">  
+<iframe style="position: absolute; top: 0;left: 0;width: 100%; height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/IA6U-TwG2mw" frameborder="0" allowfullscreen=""></iframe>  
+</div>
+
 ## What is functional programming?
 Functional programming is the process of building software by composing pure functions. 
 By constructing pure functions, it enables you to avoid any state sharing, mutation of data and any side-effects.
