@@ -19,7 +19,7 @@ By constructing pure functions, it enables you to avoid any state sharing, mutat
 Let me show you what it means.
 
 ### Example
-- Impure function:
+#### Impure function:
 ```javascript
 // Let's say we have an object x with value equal to 2
 let x = {
@@ -47,7 +47,7 @@ mult2();
 console.log(x.val); // -> 6
 ```
 
-- Pure function:
+#### Pure function:
 ```javascript
 // then in the next example
 // say, we have the same object x with value of 2
