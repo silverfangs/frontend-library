@@ -74,37 +74,50 @@ Nice, as you can see, the value of the object remain unchange.
 So in real world application, functional programming is very suitable paradigm as utility functions for use throughout your codebase. As pure functions always give you the same output, as long as you feed in the same input to it. With this consistency, it makes your code more predictable, less prone to errors and much easier to test.
 
 
-## Criteria
+### Criteria
 A pure function must satisfy both of the following properties:
 - **Referential transparency**: The function always gives the same return value for the same arguments. This means that the function cannot depend on any mutable state. (you can replace a function call with its resulting value without changing the meaning of the program)
 - **Side-effect free**: The function cannot cause any side effects. Side effects may include I/O (e.g., writing to the console or a log file), modifying a mutable object, reassigning a variable, etc.
 
-## Testing
+### Testing
 Functional code tends to be more concise, more predictable, and easier to test than imperative or object oriented code
 
-### Example: Function composition
+## Function composition
+Another important part of functional programming is function composition. Basically, you can compose your functions just like how we learnt math functions in school, for example `f(g(x))`. More example in Javascript as below:
 ```javascript
+// Example 1: we have a function of plus 1
 // h(x) = x + 1
 // number -> number
 function h(x) {
   return x + 1;
 }
 
+// Example 2: we have a function of power 2
 // g(x) = x^2
 // number -> number
 function g(x) {
   return x * x;
 }
 
+// Example 3: we have a function to convert to string
 // f(x) = convert x to string
 // number -> string
 function f(x) {
   return x.toString();
 }
 
+// Lastly , when we put all of them together
+// we compose a group of function that will
+// execute an order of logics we defined
 // y = (f.g.h)(1)
 const y = f(g(h(1)));
 console.log(y); // '4'
+
+
+// Another important remarks is, 
+// the arrangement of order for the logics 
+// does matter, it will affect the result
+// f(g(h(1))) != h(g(f(1)));
 ```
 
 
