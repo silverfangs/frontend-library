@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -9,6 +10,10 @@ export default class IndexPage extends React.Component {
 
     return (
       <section className="section">
+        <Helmet>
+          <title>Blog | FrontEnd Library</title>
+        </Helmet>
+
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -69,7 +74,8 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: {
         frontmatter: {
-          templateKey: { eq: "blog-post" }
+          templateKey: { eq: "blog-post" },
+          publishState: { eq: "Publish" }
         }
       }
     ) {
