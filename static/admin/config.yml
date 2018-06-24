@@ -32,7 +32,7 @@ collections:
         name: "publishState"
         widget: "select"
         options: ["Draft", "Publish"]
-      - {label: Post image, name: postImage, widget: image}
+      - {label: Post image, name: postImage, widget: image, default: "", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
