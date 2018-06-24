@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: About this website!
 date: '2018-06-15T13:02:24+08:00'
+publishState: Publish
 postImage: ''
 description: Published on 06/15/2018
 tags:
